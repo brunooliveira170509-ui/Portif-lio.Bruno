@@ -1,0 +1,171 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+body{
+    background: #0d0d0d;
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+
+/* Header */
+header{
+    background: linear-gradient(135deg, #1a1a1a, #2b2b2b);
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 3px solid #89CFF0;
+}
+
+
+header h1{
+    font-size: 3rem;
+    color: #89CFF0;
+}
+
+
+header p{
+    color: #ccc;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+
+/* Hero */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px 10%;
+    flex-wrap: wrap;
+}
+
+
+.foto img{
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #89CFF0;
+    box-shadow: 0 0 30px rgba(137,207,240,0.4);
+}
+
+
+.texto{
+    max-width: 600px;
+}
+
+
+.texto h2{
+    font-size: 2.2rem;
+    color: #89CFF0;
+    margin-bottom: 15px;
+}
+
+
+.texto p{
+    color: #ddd;
+    font-size: 1.1rem;
+}
+
+
+/* Sections */
+section{
+    padding: 70px 10%;
+}
+
+
+section h2{
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #89CFF0;
+    position: relative;
+}
+
+
+section h2::after{
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #89CFF0;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    border-radius: 10px;
+}
+
+
+/* Cards */
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 20px;
+}
+
+
+.card{
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #2d2d2d;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.card:hover{
+    transform: translateY(-8px);
+    border-color: #89CFF0;
+    box-shadow: 0 10px 25px rgba(137,207,240,0.2);
+}
+
+
+/* Contato */
+section p{
+    margin-bottom: 10px;
+}
+
+
+/* Footer */
+footer{
+    text-align: center;
+    padding: 25px;
+    background: #111;
+    border-top: 2px solid #89CFF0;
+    color: #aaa;
+}
+
+
+/* Responsivo */
+@media(max-width:768px){
+
+
+    header h1{
+        font-size: 2.2rem;
+    }
+
+
+    .hero{
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+
+    .texto h2{
+        font-size: 1.8rem;
+    }
+
+
+    .foto img{
+        width: 220px;
+        height: 220px;
+    }
+}
+
+
